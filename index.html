@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,27 +41,27 @@
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                          <li><a><span class="text-orange-700">Home</span></a></li>
+                          <li><a><span>Home</span></a></li>
                           <li><a>About</a></li>
                           <li><a>Pages</a></li>
                           <li><a>Blog</a></li>
                           <li><a>Contact</a></li>
                         </ul>
                       </div>
-                      <a class="btn btn-ghost text-4xl font-extrabold text-white">Hockey<span>’</span>s</a>
+                      <a class="btn btn-ghost text-4xl font-extrabold text-black">Hockey<span class="text-rose-600">’</span>s</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1">
-                        <li><a><span>Home</span></a></li>
+                        <li><a><span class="text-rose-600">Home</span></a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact</a></li>
                       </ul>
                     </div>
-                    <div class="navbar-end w-1/4">
+                    <div class="navbar-end w-2/3 gap-1">
                       <i class="fa-solid fa-magnifying-glass hidden lg:inline-block"></i>
-                      <a class="btn">Get Ticket</a>
+                      <button class="btn btn-error text-white">Get Ticket</button>
                     </div>
                   </div>
             </nav>
@@ -70,7 +70,7 @@
 
         <section>
             <!-- working for banner -->
-            <div class="carousel w-full">
+            <div class="carousel w-full relative">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="Images/1.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -88,9 +88,9 @@
             </div>
 
             <!-- optional sticker -->
-            <div class="-mt-24 z-10">
-                <div class="bg-black  text-white p-8">
-                    <h4 class="">Meet all the heroes from the field</h4>
+            <div class="-mt-40 absolute right-52 max-w-xl">
+                <div class="bg-black  text-white p-8 sm:grid-rows-1">
+                    <h4 class="text-2xl font-extrabold">Meet all the heroes from the field</h4>
                     <p>Others are health workers or agriculture experts, working to bring the most cutting-edge science to the most remote places on earth.</p>
                 </div>
             </div> 
@@ -98,14 +98,14 @@
     </header>
 
     <main class="container mx-auto">
-        <hr class="border-dashed">
+        <hr class="border-dashed mt-3">
         <!-- Professional Hockeys Club section -->
         <section class="text-center my-12">
             <div>
-                <h2 class="text-5xl font-extrabold mb-5">Professional Hockeys Club</h2>
+                <h2 class="text-3xl font-extrabold mb-5">Professional Hockeys Club</h2>
                 <p>The Allen Americans Professional Hockey Club is a member of the ECHL, the world's top Double-A hockey league, and is the affiliate of the National Hockey</p>
             </div>
-            <div class="flex my-11">
+            <div class="grid grid-cols-1 lg:grid-cols-4 my-11">
                 <div>
                     <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
                     <h3>Prayer Facility</h3>
@@ -125,6 +125,25 @@
                     <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
                     <h3>Training Ground</h3>
                     <p>A place where people go to get fit and practices the skills necessary for the sport that they play</p>
+                </div>
+            </div>
+        </section>
+        <hr class="border-dashed">
+
+        <!-- Program Sections -->
+        <hr class="border-dashed mt-3">
+        <section>
+            <div class="text-center my-12">
+                <h3 class="text-3xl font-extrabold">Program Sections</h3>
+                <p>Program sections, are simply a section of code or data.</p>
+            </div>
+            <div>
+                <div class="lg:flex flex-col gap-5">
+                    <div class="max-w-xl"><img src="Images/2.png" alt=""></div>
+                    <div><img src="Images/3.png" alt=""></div>
+                </div>
+                <div>
+                    <img src="Images/4.png" alt="">
                 </div>
             </div>
         </section>
